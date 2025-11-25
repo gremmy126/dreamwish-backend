@@ -1,0 +1,20 @@
+########################################
+# Dreamwish Backend - AI/Knowledge Base #
+########################################
+
+# LangChain + Vector store
+langchain==0.1.0
+langchain-core
+langchain-community
+chromadb
+
+# Embeddings & PDF
+sentence-transformers
+pypdf
+
+# Image/OCR (if needed)
+pillow
+pytesseract
+
+# Ollama client (if using local models)
+ollama

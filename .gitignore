@@ -10,6 +10,11 @@ ENV/
 .env.*.local
 
 # Python
+chroma_db/
+dreamwish_cs.db
+logs/
+*.log
+
 __pycache__/
 *.py[cod]
 *$py.class

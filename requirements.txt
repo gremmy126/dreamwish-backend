@@ -1,6 +1,10 @@
+########################################
+# Dreamwish Backend - Base Requirements #
+########################################
+
 # Core
 python-dotenv
-asyncio
+pytz
 
 # Web Framework
 fastapi
@@ -9,47 +13,19 @@ websockets
 aiohttp
 pydantic
 
-# Database
+# Database (SQLite default)
 sqlalchemy
-databases[postgresql]
-psycopg2-binary
 alembic
 
-# Timezone
-pytz
-
-# AI & LangChain with Ollama
-langchain==0.1.0
-langchain-core
-langchain-community
-ollama  # Ollama Python 클라이언트
-chromadb  # 벡터 DB (FAISS 대체)
-sentence-transformers  # 로컬 임베딩
-pypdf  # PDF 처리
-pillow  # 이미지 처리
-pytesseract  # OCR (이미지 텍스트 추출)
-
-# Social Media APIs
-requests
-facebook-sdk
-instagrapi
-python-twitter
-
-# Email
-aiosmtplib
-email-validator
-
-# Utils
-python-multipart
+# Auth & Forms
 python-jose[cryptography]
 passlib[bcrypt]
-redis
-celery
+python-multipart
 
-python-dotenv
+# Optional HTTP client (some services use aiohttp)
 httpx
-websockets
-jinja2
-fastapi
-SQLAlchemy
-pydantic
+
+# Note:
+# - Heavy AI/ocr/pdf libraries moved to requirements.ai.txt
+# - Social SDKs removed (we use Meta Graph API via aiohttp/httpx)
+# - Postgres driver (psycopg2-binary) can be added if needed
