@@ -1,0 +1,41 @@
+# 가상환경
+venv/
+env/
+ENV/
+.venv
+
+# 환경변수
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 임시 파일
+PDF_임시폴더/
+PDF_이미지/
+faiss_index/
+*.pdf
+*.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+node_modules
